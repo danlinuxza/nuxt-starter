@@ -16,6 +16,9 @@ definePageMeta({
 
 <template>
   <Container>
+    <!-- Hanko Authentication Component -->
+    <hanko-auth></hanko-auth>
+
     <Hero
       :title="page.hero.title"
       :description="page.hero.description"
@@ -28,16 +31,16 @@ definePageMeta({
       :title="page.features.title"
       :description="page.features.description"
       :items="page.features.items"
-    > test</Features>
+    />
     <Testimonials
       :title="page.testimonials.title"
       :description="page.testimonials.description"
       :items="page.testimonials.items"
-    ></Testimonials>
+    />
     <Cta
       :title="page.cta.title"
       :description="page.cta.description"
       :buttons="page.cta.buttons"
-    ></Cta>
+    />
   </Container>
 </template>

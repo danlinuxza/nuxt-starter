@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
@@ -17,4 +16,7 @@ export default defineNuxtConfig({
   experimental: { appManifest: false },
   modules: ["@nuxt/content", "nuxt-icon", "@nuxt/image"],
   compatibilityDate: "2024-12-18",
+  plugins: [
+    { src: '~/plugins/hanko.js', mode: 'client' }  // Ensure Hanko is only loaded client-side
+  ]
 });
